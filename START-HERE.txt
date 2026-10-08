@@ -1,0 +1,19 @@
+CivicAI - quick start (Windows PowerShell). Open this folder in VS Code (File > Open Folder).
+
+TERMINAL 1 (backend):
+  cd backend
+  python -m venv venv
+  .\venv\Scripts\Activate.ps1
+  pip install -r requirements.txt
+  copy .env.example .env
+  python seed.py
+  python run.py
+
+TERMINAL 2 (frontend):
+  cd frontend
+  npm install
+  npm run dev
+
+Open the URL shown (http://localhost:5173). Demo password for all accounts: Demo@123
+  citizen@civic.demo | officer@civic.demo | admin@civic.demo
+Next time only run: python run.py (venv activated) and npm run dev.

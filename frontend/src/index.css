@@ -1,0 +1,10 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+body { @apply text-slate-800 antialiased; background: radial-gradient(circle at 8% 0%, rgba(37,99,235,.12), transparent 40%), radial-gradient(circle at 92% 18%, rgba(6,182,212,.14), transparent 40%), linear-gradient(180deg,#eef6ff 0%,#f8fafc 60%) fixed; }
+@keyframes float { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-12px) } }
+.float { animation: float 4s ease-in-out infinite; }
+.card { @apply bg-white rounded-2xl border border-slate-200 shadow-sm p-5 transition hover:-translate-y-0.5 hover:shadow-md; }
+.btn { @apply inline-flex items-center justify-center gap-2 rounded-xl bg-brand-500 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-600 disabled:opacity-50 transition; }
+.btn-ghost { @apply inline-flex items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 transition; }
+.input { @apply w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500; }
+.label { @apply mb-1 block text-xs font-semibold uppercase tracking-wide text-slate-500; }
+.hero-bg { background: linear-gradient(135deg, rgba(11,27,77,.82), rgba(29,78,216,.55)), url('/hero.svg') center/cover no-repeat, linear-gradient(135deg,#0f1f4d,#2563eb); }
